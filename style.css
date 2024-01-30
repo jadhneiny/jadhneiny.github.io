@@ -12,13 +12,13 @@ body {
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #fff; /* White background for container sections */
+    background-color: #ffffff; /* White background for container sections */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 header {
-    background: #2c3e50; /* Navy blue background for contrast */
+    background: #34495e; /* Dark background for contrast with white text */
     color: #ffffff;
     padding: 15px 0;
     position: sticky;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f39c12; /* Orange color for hover, adds a pop of color */
+    background-color: #f39c12; /* Orange color for hover */
     color: #ffffff;
 }
 
@@ -63,7 +63,7 @@ nav ul li a:hover {
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #2c3e50; /* Navy blue color for headings */
+    color: #2c3e50; /* Dark color for headings */
 }
 
 section p, section form {
@@ -73,7 +73,7 @@ section p, section form {
 }
 
 footer {
-    background: #2c3e50; /* Matching the header background */
+    background: #34495e; /* Dark background for footer */
     color: #ffffff;
     padding: 20px 0;
     font-size: 0.9em;
