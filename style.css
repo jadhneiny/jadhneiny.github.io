@@ -3,22 +3,28 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fff; /* Cleaner background */
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); /* Elegant gradient background */
     line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px; /* Adjusted for wider screens */
+    max-width: 1200px;
     margin: auto;
-    padding: 20px; /* Added padding */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px; /* Rounded corners for container */
     overflow: hidden;
-    background-color: #ffffff; /* Subtle container background */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft box shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight scale on hover */
 }
 
 header {
-    background: #35424a; /* Updated to a more modern color */
-    color: #fff;
+    background: #35424a;
+    color: #ffffff;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -26,11 +32,12 @@ header {
 }
 
 header h1 {
-    padding-left: 20px; /* Align with container */
+    padding-left: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Text shadow for depth */
 }
 
 nav ul {
-    padding-right: 20px; /* Align with container */
+    padding-right: 20px;
     list-style: none;
     text-align: right;
 }
@@ -44,52 +51,64 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px; /* Added padding for better touch */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #f6b93b; /* Highlight color on hover */
+    background-color: #f6b93b;
+    color: #ffffff;
 }
 
 .section-bg {
-    background: #f9f9f9; /* Lighter background for sections */
+    background: rgba(250, 250, 250, 0.8);
+    padding: 60px 0;
 }
 
 section {
-    padding: 60px 0; /* More vertical padding */
+    padding: 60px 0;
+    text-align: center;
 }
 
 footer {
-    background: #35424a; /* Matching header color */
-    color: #fff;
+    background: #35424a;
+    color: #ffffff;
     padding: 20px 0;
+    font-size: 0.8em;
 }
 
 /* Contact Form Styling */
 #contact-form {
-    background: #fff; /* Form background */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Enhance box-shadow */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#contact-form:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    transform: translateY(-5px);
 }
 
 #contact-form input, #contact-form textarea {
     width: 100%;
-    padding: 15px; /* More padding for input */
+    padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded corners for input fields */
+    border-radius: 5px;
 }
 
 #contact-form button {
-    background: #f6b93b; /* Eye-catching button color */
-    border-radius: 4px; /* Rounded button */
-    transition: background-color 0.3s; /* Transition for button hover */
+    background: #f6b93b;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #contact-form button:hover {
-    background: #e58e26; /* Darker shade on hover */
+    background: #e58e26;
+    transform: translateY(-3px);
 }
 
 /* Responsive Design */
