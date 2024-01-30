@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to right, #ece9e6, #ffffff); /* Elegant gradient background */
+    background: #eaeaea; /* Light grey background for the entire page */
     line-height: 1.6;
 }
 
@@ -12,13 +12,13 @@ body {
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff; /* White background for container sections */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 header {
-    background: #35424a; /* Darker background for contrast */
+    background: #2c3e50; /* Navy blue background for contrast */
     color: #ffffff;
     padding: 15px 0;
     position: sticky;
@@ -51,19 +51,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f6b93b; /* Accent color for hover */
+    background-color: #f39c12; /* Orange color for hover, adds a pop of color */
     color: #ffffff;
 }
 
 .section-bg {
-    background: #fafafa; /* Light background for sections */
+    background: #dfe6e9; /* Light blue-grey background for sections */
     padding: 50px 0;
 }
 
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #35424a; /* Dark color for headings */
+    color: #2c3e50; /* Navy blue color for headings */
 }
 
 section p, section form {
@@ -73,7 +73,7 @@ section p, section form {
 }
 
 footer {
-    background: #35424a;
+    background: #2c3e50; /* Matching the header background */
     color: #ffffff;
     padding: 20px 0;
     font-size: 0.9em;
@@ -89,7 +89,7 @@ footer {
 }
 
 #contact-form button {
-    background: #4d4d4d; /* Neutral button color */
+    background: #3498db; /* Blue button color */
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -98,7 +98,7 @@ footer {
 }
 
 #contact-form button:hover {
-    background: #3c3c3c; /* Darker shade on hover */
+    background: #2980b9; /* Darker shade of blue on hover */
 }
 
 @media (max-width: 768px) {
