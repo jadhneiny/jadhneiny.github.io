@@ -3,18 +3,21 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #fff; /* Cleaner background */
     line-height: 1.6;
 }
 
 .container {
-    width: 80%;
+    max-width: 1200px; /* Adjusted for wider screens */
     margin: auto;
+    padding: 20px; /* Added padding */
     overflow: hidden;
+    background-color: #ffffff; /* Subtle container background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft box shadow for depth */
 }
 
 header {
-    background: #333;
+    background: #35424a; /* Updated to a more modern color */
     color: #fff;
     padding: 20px 0;
     position: sticky;
@@ -23,14 +26,13 @@ header {
 }
 
 header h1 {
-    float: left;
-    margin: 0;
+    padding-left: 20px; /* Align with container */
 }
 
 nav ul {
-    float: right;
+    padding-right: 20px; /* Align with container */
     list-style: none;
-    margin: 0;
+    text-align: right;
 }
 
 nav ul li {
@@ -42,58 +44,62 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px; /* Added padding for better touch */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #f6b93b; /* Highlight color on hover */
 }
 
 .section-bg {
-    background: #eaeaea;
+    background: #f9f9f9; /* Lighter background for sections */
 }
 
 section {
-    padding: 40px 0;
-    text-align: center;
+    padding: 60px 0; /* More vertical padding */
 }
 
 footer {
-    background: #333;
+    background: #35424a; /* Matching header color */
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /* Contact Form Styling */
 #contact-form {
-    max-width: 500px;
-    margin: auto;
+    background: #fff; /* Form background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Enhance box-shadow */
 }
 
 #contact-form input, #contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* More padding for input */
     margin: 10px 0;
     border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners for input fields */
 }
 
 #contact-form button {
-    width: 100%;
-    background: #4d9feb;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    background: #f6b93b; /* Eye-catching button color */
+    border-radius: 4px; /* Rounded button */
+    transition: background-color 0.3s; /* Transition for button hover */
 }
 
 #contact-form button:hover {
-    background: #333;
+    background: #e58e26; /* Darker shade on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 100%;
+        padding: 10px;
     }
 
     header h1, nav ul {
-        float: none;
         text-align: center;
     }
 
@@ -105,5 +111,9 @@ footer {
     nav ul li a {
         display: block;
         margin: 0;
+    }
+
+    header h1, nav ul {
+        float: none;
     }
 }
