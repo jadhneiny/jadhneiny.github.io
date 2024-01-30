@@ -3,29 +3,23 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); /* Elegant gradient background */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Vibrant gradient background */
     line-height: 1.6;
 }
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 20px auto; /* Reduced vertical spacing */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px; /* Rounded corners for container */
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
-}
-
-.container:hover {
-    transform: scale(1.02); /* Slight scale on hover */
+    background-color: #fff; /* Solid white for clarity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Refined box shadow */
+    border-radius: 8px; /* Soft rounded corners */
 }
 
 header {
-    background: #35424a;
+    background: #333;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -33,7 +27,7 @@ header {
 
 header h1 {
     padding-left: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Text shadow for depth */
+    font-size: 1.4em; /* Larger font size for header */
 }
 
 nav ul {
@@ -44,7 +38,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 15px; /* Reduced margin */
 }
 
 nav ul li a {
@@ -52,7 +46,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    transition: color 0.3s, background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -61,60 +55,54 @@ nav ul li a:hover {
 }
 
 .section-bg {
-    background: rgba(250, 250, 250, 0.8);
-    padding: 60px 0;
+    background: #f2f2f2; /* Subtle background for sections */
+    padding: 40px 0; /* Reduced padding */
 }
 
 section {
-    padding: 60px 0;
     text-align: center;
 }
 
 footer {
-    background: #35424a;
+    background: #333;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 15px 0; /* Reduced padding */
     font-size: 0.8em;
 }
 
 /* Contact Form Styling */
 #contact-form {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: all 0.3s ease-in-out;
-}
-
-#contact-form:hover {
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-    transform: translateY(-5px);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact-form input, #contact-form textarea {
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 5px 0; /* Reduced margin */
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #contact-form button {
-    background: #f6b93b;
-    border-radius: 5px;
+    background: #4CAF50; /* Vivid button color */
+    color: #fff; /* White text for contrast */
+    border: none;
     padding: 10px 15px;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 #contact-form button:hover {
-    background: #e58e26;
-    transform: translateY(-3px);
+    background: #45a049; /* Darker shade on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 95%;
         padding: 10px;
     }
 
@@ -124,15 +112,11 @@ footer {
 
     nav ul li {
         display: block;
-        margin-top: 10px;
+        margin-top: 5px; /* Reduced margin */
     }
 
     nav ul li a {
         display: block;
         margin: 0;
-    }
-
-    header h1, nav ul {
-        float: none;
     }
 }
